@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <title>Flexbox Study</title>
     </head>
     <body>
         <header>Clique nas imagens</header>
-        <main class="flex-container">
-            <img class="flex-item" src="images/Rammus Cromo.jpg" alt="Skin Rammus Cromo">
-            <img class="flex-item" src="images/Rammus de Freljord.jpg" alt="Skin Rammus de Freljord">
-            <img class="flex-item" src="images/Rammus de Lava.jpg" alt="Skin Rammus de Lava">
-            <img class="flex-item" src="images/Rammus Rei.jpg" alt="Skin Rammus Rei">
-        </main>
+        <form class="flex-container">
+            <div class="flex-item">
+                <input type="radio" name="Rammus Skin" id="Rammus Cromo">
+                <label for="Rammus Cromo">
+                    <img src="images/Rammus Cromo.jpg" alt="Skin Rammus Cromo">
+                </label>
+            </div>
+            <div class="flex-item">
+                <input type="radio" name="Rammus Skin" id="Rammus de Freljord">
+                <label for="Rammus de Freljord">
+                    <img src="images/Rammus de Freljord.jpg" alt="Skin Rammus de Freljord">
+                </label>
+            </div>
+            <div class="flex-item">
+                <input type="radio" name="Rammus Skin" id="Rammus de Lava">
+                <label for="Rammus de Lava">
+                    <img src="images/Rammus de Lava.jpg" alt="Skin Rammus de Lava">
+                </label>
+            </div>
+            <div class="flex-item">
+                <input type="radio" name="Rammus Skin" id="Rammus Rei" checked>
+                <label for="Rammus Rei">
+                    <img src="images/Rammus Rei.jpg" alt="Skin Rammus Rei">
+                </label>
+            </div> 
+        </form>
         <footer></footer>
     </body>
 </html>
